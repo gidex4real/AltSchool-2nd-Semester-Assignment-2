@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+body{
+  color: #78da1e;
+  padding: 20px;
+}
+
+.home-page{
+  height: 95vh;
+  color: #fff;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(126, 213, 111, 0.8), 
+    rgba(40, 180, 133, 0.8)), 
+    url(./img/hero-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.home__logo-box{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.home__text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.heading__1-main{
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 1.5rem;
+  font-weight: 700;
+}
+
+.heading__1-sub{
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 5rem;
+}
+
+.users-container{
+  margin: auto;
+}
+
+.user-item{
+  background-color: #f0f8ff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  list-style: none;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+}
+
+.user-heading{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.user-number{
+  margin-bottom: 30px;
+}
+
+.btn,
+.btn:link, 
+.btn:visited{
+  background: #78da1e;
+  color: white;
+  margin: 20px 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  transition: all .2s;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+}
+
+.back-btn{
+  display: inline-block;
+}
+
+#home-btn{
+  padding: 1.5rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.pagination-btn{
+  margin: 5px;
+}
+
+.pagination{
+  text-align: center;
+}
+
+.card-image{
+  width: 20%;
+  border-radius: 40%;
+}
+
+/* User Section */
+.container{
+  width: 75%;
+  margin: auto;
+  background: #f0f8ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-container{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.userProfile-heading{
+  margin: 10px;
+  padding-top: 20px;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: .5rem;
+  border-bottom: 1px solid;
+}
+
+.user-photo{
+  margin-left: 10px;
+}
+
+.user-image{
+  height: 100%;
+  object-fit: contain;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.user-profile{
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.user-detail{
+  padding: 10px;
+  margin: 10px;
+  text-align: start;
+}
+
+.heading-2{
+  border: 1px solid;
+  padding: 5px;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .userProfile-heading{
+    font-size: 2rem;
+    letter-spacing: .3rem;
+  }
+
+  .user-container{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .user-photo{
+    margin: auto;
+    margin-top: 10px;
+  }
+  .user-profile {
+    padding: 0;
+  }
+  .user-heading {
+    font-size: 20px;
+  }
+  .heading__1-main {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .home__logo-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+  .heading__1-main {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 400;
+  }
+
+  .heading__1-sub {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .btn,
+  .btn:link, 
+  .btn:visited{
+  margin: 5px 5px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+  
+  #home-btn {
+    font-size: 10px;
+    padding: .8rem 1rem; 
+    font-weight: normal;
+  }
+  .userProfile-heading{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .user-heading {
+    font-size: 14px;
+  }
+  .user-number {
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+  .user-photo {
+    font-size: 14px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-image {
+    width: 40%;
+    align-self: center;    
+  }
+
+  .user-profile{
+    font-size: 60%;
+    display: block;
+    margin: 10px auto;
+  }
+  .user-detail {
+    padding: 0;
+}
+  
+}
+
+
+
+
+
