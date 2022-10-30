@@ -30,8 +30,8 @@ export default function Users() {
   return (
     <div className="users-container">
       <Link to={-1} className="btn back-btn">Back</Link>
-      <h1 className="userProfile-heading">List of 
- Frontend Engineers</h1>
+      <h1 className="userProfile-heading">List of
+        Frontend Engineers</h1>
       {data?.results.slice(skip, skip + per_page).map(each => {
         const name = `${each.name.first} ${each.name.last}`;
         const phone = `${each.phone}`;
@@ -57,14 +57,14 @@ export default function Users() {
       })}
 
       <div className="pagination">
-        <button  
+        <button
           disabled={page <= 1}
           onClick={() => setPage((prev) => prev - 1)}
           className="btn pagination-btn"
         >
           Prev
         </button>
-  
+
         {Array.from({ length: 5 }, (_, x) => x + 1).map((item, i) => {
           return (
             <button
@@ -76,7 +76,7 @@ export default function Users() {
             </button>
           );
         })}
-  
+
         <button
           disabled={page >= pages}
           onClick={() => setPage((prev) => prev + 1)}

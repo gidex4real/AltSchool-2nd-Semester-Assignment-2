@@ -6,7 +6,7 @@
 
 
 body{
-  color: #78da1e;
+  color: #7f67a2;
   padding: 20px;
 }
 
@@ -39,7 +39,12 @@ body{
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-
+.home__logo{
+  width: 30%;
+  height: 30%;
+  border-radius: 10%;
+}
+  
 .heading__1-main{
   display: block;
   font-size: 6rem;
@@ -97,8 +102,9 @@ body{
   box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
 }
 
-.back-btn{
-  display: inline-block;
+.btn-container{
+  display: flex;
+  justify-content: space-between;
 }
 
 #home-btn{
@@ -176,6 +182,11 @@ body{
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
+  .home__logo {
+    width: 20%;
+    height: 20%;
+  }
+
   .userProfile-heading{
     font-size: 2rem;
     letter-spacing: .3rem;
@@ -205,6 +216,11 @@ body{
 }
 
 @media only screen and (max-width: 600px) { 
+  .home__logo {
+    width: 15%;
+    height: 15%;
+  }
+  
   .home__logo-box {
     position: absolute;
     top: 1.5rem;
@@ -266,7 +282,7 @@ body{
   }
   .user-detail {
     padding: 0;
-}
+  }
   
 }
 

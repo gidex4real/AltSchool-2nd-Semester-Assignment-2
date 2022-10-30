@@ -30,7 +30,10 @@ export default function User() {
 
   return (
     <>
-      <Link to={-1} className="btn back-btn">Back</Link>
+      <div className="btn-container">
+        <Link to={-1} className="btn back-btn">Back</Link>
+        <Link to='/' className="btn">Home</Link>
+      </div>
       <div className="container">
         <h1 className="userProfile-heading">User Profile</h1>
         <div className="user-container">
@@ -88,7 +91,7 @@ export default function User() {
           </div>
         </div>
       </div>
-  
+
     </>
   )
 
